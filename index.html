@@ -2,124 +2,167 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para ti, Maciel ❤️</title>
+    <title>Feliz Día de la Novia</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #ffe6eb, #ffe6f2);
+            background: #ffd6dc;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-align: center;
-            overflow: hidden;
+            overflow-x: hidden;
         }
-
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
         h1 {
-            margin-top: 60px;
             color: #c91c4c;
             font-size: 3em;
-            animation: aparecer 3s ease-in-out forwards;
-            opacity: 0;
+            margin-top: 20px;
         }
-
-        @keyframes aparecer {
-            0% { opacity: 0; transform: scale(0.8); }
-            100% { opacity: 1; transform: scale(1); }
-        }
-
         .photo {
-            max-width: 300px;
-            border-radius: 15px;
-            margin: 10px;
+            border-radius: 20px;
+            width: 80%;
+            max-width: 400px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            margin: 20px auto;
         }
-
         .heart {
             position: absolute;
             width: 20px;
             height: 20px;
-            background: radial-gradient(circle, #ff5e7e, #c91c4c);
+            background: red;
             transform: rotate(45deg);
-            animation: floatUp 5s infinite ease-in;
-            box-shadow: 0 0 8px rgba(255, 105, 135, 0.6);
+            animation: float 6s infinite ease-in;
         }
-
-        .heart::before, .heart::after {
+        .heart:before,
+        .heart:after {
             content: "";
             position: absolute;
             width: 20px;
             height: 20px;
-            background: radial-gradient(circle, #ff5e7e, #c91c4c);
+            background: red;
             border-radius: 50%;
         }
-
-        .heart::before {
+        .heart:before {
             top: -10px;
             left: 0;
         }
-
-        .heart::after {
+        .heart:after {
             left: -10px;
             top: 0;
         }
-
-        @keyframes floatUp {
-            0% { transform: translateY(0) rotate(45deg); opacity: 1; }
-            100% { transform: translateY(-100vh) rotate(45deg); opacity: 0; }
-        }
-    </style>
-</head>
-<body>
-
-    <h1>Para ti, Maciel ❤️</h1>
-
-    <p id="frase" style="font-size: 1.5em; color: #c91c4c; margin-top: 20px;"></p>
-
-    <div style="background-color: #fff0f5; padding: 20px; border-radius: 15px; margin: 30px auto; max-width: 600px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-        <h2 style="color: #c91c4c;">Para ti, Maciel 💌</h2>
-        <p style="font-size: 1.2em;">
-            Gracias por ser parte de mi vida. Tu sonrisa ilumina mis días y tu amor llena mi corazón.
-            Eres mi inspiración, mi paz, mi todo. Te amo más de lo que las palabras pueden expresar.
-        </p>
-    </div>
-
-    <audio autoplay loop>
-        <source src="https://files.catbox.moe/g5ixtj.mp3" type="audio/mpeg">
-        Tu navegador no soporta audio.
-    </audio>
-
-    <script>
-        // Frase estilo máquina de escribir
-        const texto = "Eres lo mejor que me ha pasado, Maciel ❤️";
-        let i = 0;
-        function escribir() {
-            if (i < texto.length) {
-                document.getElementById("frase").innerHTML += texto.charAt(i);
-                i++;
-                setTimeout(escribir, 80);
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(45deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-600px) rotate(45deg);
+                opacity: 0;
             }
         }
-        escribir();
+    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Día de la Novia, Maciel</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom right, #fce4ec, #f8bbd0);
+      text-align: center;
+      overflow: hidden;
+    }
 
-        // Corazones flotando
-        function crearCorazon() {
-            const heart = document.createElement("div");
-            heart.className = "heart";
-            heart.style.left = Math.random() * 100 + "vw";
-            heart.style.animationDuration = (Math.random() * 2 + 3) + "s";
-            document.body.appendChild(heart);
-            setTimeout(() => document.body.removeChild(heart), 5000);
-        }
-        setInterval(crearCorazon, 300);
-    </script>
+    h1 {
+      color: #d81b60;
+      font-size: 2.5rem;
+      margin-top: 20px;
+    }
 
-    <script src="https://cdn.jsdelivr.net/gh/lokesh-coder/rose-falling@main/rose-falling.min.js"></script>
-    <script>
-        roseFalling({
-            color: "#ff4d6d",
-            maxSize: 15,
-            numRoses: 40,
-            fallSpeed: 1
-        });
-    </script>
+    .mensaje {
+      max-width: 90%;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(255,255,255,0.9);
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      font-size: 1.1rem;
+      color: #880e4f;
+    }
+
+    .imagen {
+      width: 300px;
+      max-width: 80%;
+      border-radius: 15px;
+      margin-top: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    /* Animación de corazones */
+    .corazon {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center/cover;
+      animation: flotar 6s infinite;
+      opacity: 0.6;
+    }
+
+    @keyframes flotar {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateY(-100vh) scale(0.5);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Feliz Día de la Novia, Maciel</h1>
+        <img class="photo" src="maciel.jpg" alt="Foto de la pareja">
+    </div>
+  <h1>Para Mi Amor</h1>
+  <img src="maciel.jpg" alt="Nosotros" class="imagen" />
+
+    <!-- Música -->
+    <audio id="musica" loop>
+    <source src="mi_cancion.mp3" type="audio/mpeg">
+  <!-- Música -->
+  <audio id="musica" autoplay loop muted>
+    <source src="https://files.catbox.moe/g5ixtj.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+</audio>
+
+<script>
+    // Reproducir después de cualquier clic o toque
+  </audio>
+  <script>
+    // Desbloquea el audio con un clic
+    window.addEventListener('click', () => {
+        document.getElementById('musica').play();
+    }, { once: true });
+</script>
+      const audio = document.getElementById('musica');
+      audio.muted = false;
+      audio.play();
+    });
+
+    // Generar corazones animados
+    setInterval(() => {
+      const corazon = document.createElement('div');
+      corazon.classList.add('corazon');
+      corazon.style.left = Math.random() * window.innerWidth + 'px';
+      corazon.style.top = '100vh';
+      document.body.appendChild(corazon);
+      setTimeout(() => corazon.remove(), 6000);
+    }, 500);
+  </script>
 </body>
 </html>
